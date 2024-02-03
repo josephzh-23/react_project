@@ -1,0 +1,73 @@
+/* 
+Kind of base styles */
+.container {
+
+    width: 100%;
+    /* When you start using the flex layout here  */
+    display: flex;
+
+    /* horizontal */
+    justify-content:space-around; 
+
+    /* vertical */
+    align-items:flex-start
+}
+
+
+
+
+.item {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    padding: 1em; 
+    border: 3px solid #333
+}
+
+/* 
+Kind of base styles */
+.container2 {
+
+    width: 100%;
+    /* When you start using the flex layout here  */
+    display: flex;
+
+    /* horizontal */
+    justify-content:space-around; 
+
+    /* vertical */
+    align-items:flex-start
+}
+
+
+.vertical-container {
+
+    width: 100%;
+    /* When you start using the flex layout here  */
+    display: flex;
+
+    /* horizontal */
+    justify-content:space-around; 
+
+    /* vertical */
+    align-items:center
+
+
+}
+
+.box-container {
+
+    /* The position must be absolute for child and relative in parent"*/
+    position: absolute;
+    top: 800px;
+    left: 50%;
+    margin: 0 auto;
+
+    /*
+
+    The transform: translate(-50%, -50%) property ensures that 
+    the child component is precisely centered by moving it 50% of 
+    its own width and height in the opposite direction.
+    */
+    transform: translate(-50%, -50%);
+}

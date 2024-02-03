@@ -1,24 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Box from './Box.js'
 
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from './NavBar.js';
+import SubmitForm from './Form.js';
+import List from './List.js';
 function App() {
+
+
+// Has to be wrapped in a BrowserRouter as said 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // Use react router here which is important here 
+  
+
+  <> 
+  <Navbar/>
+      <Routes>
+
+          <Route path = "/box" element={<Box />} />
+          <Route path = "/home" element={<Box />}/>
+          <Route path = "/form" element={<SubmitForm />} />
+          <Route path = "/list" element={<List />} 
+          />
+      </Routes>
+    </> 
   );
 }
 
