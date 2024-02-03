@@ -11,9 +11,13 @@ import { useState } from "react";
 export default function SubmitForm() {
     const [formData, setFormData] = useState({ name: "", email: "", message: "" });
 
+
+    // Need the data over here and then we will start here 
     const handleChange = (e) => {
         const { name, value } = e.target;
         console.log(e.target.value);
+
+        // Here this is important because we can update with a dyncamic name 
         setFormData((prev) => ({ ...prev, [name]: value }));
     };
 
